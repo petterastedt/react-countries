@@ -9,6 +9,7 @@ import Signup from './pages/Signup';
 import api from '../api';
 import logo from '../logo.svg';
 import CountryDetail from './pages/CountryDetail'
+import EditCountry from './pages/EditCountry'
 
 class App extends Component {
   constructor(props) {
@@ -41,6 +42,7 @@ class App extends Component {
           <Route path="/" exact component={Home} />
           <Route path="/countries" exact component={Countries} />
           <Route path="/countries/:countryId" component={CountryDetail} />
+          <Route path="/edit-country/:countryId" component={EditCountry} />
           <Route path="/add-country" component={AddCountry} />
           <Route path="/signup" component={Signup} />
           <Route path="/login" component={Login} />
